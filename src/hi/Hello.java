@@ -8,17 +8,22 @@ package hi;
 import javafx.application.Application;
 import javafx.stage.Stage;
 
-
 /**
  *
  * @author john
  */
 public class Hello extends Application {
-    
+
     @Override
     public void start(Stage primaryStage) {
         primaryStage.setTitle("Hello World!");
+        GridPane grid = new GridPane();
+        grid.setAlignment(Pos.CENTER);
+        grid.setHgap(10);
+        grid.setVgap(10);
+        grid.setPadding(new Insets(25, 25, 25, 25));
 
+        Scene scene = new Scene(grid, 300, 275);
 
         primaryStage.show();
     }
@@ -29,5 +34,5 @@ public class Hello extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }
