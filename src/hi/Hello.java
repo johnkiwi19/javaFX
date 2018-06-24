@@ -40,6 +40,9 @@ public class Hello extends Application {
         Label userName = new Label("User Name:");
         grid.add(userName, 0, 1);
 
+        Label userName = new Label("User Name:");
+        grid.add(userName, 0, 1);
+
         TextField userTextField = new TextField();
         grid.add(userTextField, 1, 1);
 
